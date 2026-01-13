@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hostel Management</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background:#0000ff53; }
+    
+    /* Header */
+    header {
+      background: #FFFFFF;
+      color: rgb(0, 0, 0);
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Logo + Title Area */
+    .logo-box {
+      text-align: center;
+      padding: 25px 10px;
+      background: rgb(182, 182, 223);
+      border-bottom: 2px solid #FFFFFF;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      background: #999999;
+      border-radius: 50%;
+      margin: auto;
+      color: rgb(13, 0, 0);
+      font-size: 50px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hostel-title {
+      font-size: 45px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #000000;
+    }
+
+    nav a { 
+      color: rgb(0, 0, 0); 
+      margin: 0 8px; 
+      text-decoration: none; 
+      font-weight: bold;
+    }
+
+    section { display: none; padding: 20px; }
+    section:target { display: block; }
+    #home { display: block; } /* default page */
+
+    h2 { color: #004080; }
+    .card { background:#eee; padding:10px; border-radius:5px; margin:10px 0; }
+    input, select, textarea { width:100%; padding:8px; margin:5px 0; }
+    button { background:#004080; color:white; padding:8px 12px; border:none; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Home</a> |
+    <a href="#about">About</a> |
+    <a href="#rooms">Rooms</a> |
+    <a href="#register">Register</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- LOGO & TITLE INTERFACE -->
+<div class="logo-box">
+  <div class="logo"></div>
+  <div class="hostel-title">Sunrise Boys Hostel</div>
+</div>
+
+<!-- PAGES -->
+
+<section id="home">
+  <h3>Welcome !</h3>
+  <p>Welcome to DDGMT Boys Hostel! 
+    Safe rooms, healthy food, and a peaceful study environment.</p>
+</section>
+
+<section id="about">
+  <h2>About the Hostel</h2>
+  <p>We provide rooms, Wi-Fi, 24/7 security, laundry, and nutritious meals for all students.</p>
+</section>
+
+<section id="rooms">
+  <h2>Room Details</h2>
+  <div class="card"><strong>Single Room</strong> – ₹7000/month</div>
+  <div class="card"><strong>Double Room</strong> – ₹4500/month</div>
+  <div class="card"><strong>Triple Room</strong> – ₹3200/month</div>
+</section>
+
+<section id="register">
+  <h2>Register Now</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="text" placeholder="Student ID" required>
+    <input type="email" placeholder="Email" required>
+    <select>
+      <option>Single Room</option>
+      <option>Double Room</option>
+      <option>Triple Room</option>
+    </select>
+    <button>Submit</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: hostel@example.com<br>Phone: +91 98765 43210</p>
+  <form>
+    <input type="text" placeholder="Your Name">
+    <textarea placeholder="Your Message"></textarea>
+    <button>Send</button>
+  </form>
+</section>
+
+</body>
+</html>
